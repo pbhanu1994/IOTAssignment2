@@ -1,0 +1,30 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Smart Office IoT application {% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Office</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="doctors">Doctors</a></li>
+            <li><a href="patients">Patients</a></li>
+            <li><a href="clerks">Clerks</a></li>
+        </ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<h1>Smart Office</h1>
+<div class="alert alert-success" role="alert">
+    
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
